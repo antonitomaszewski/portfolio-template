@@ -1,0 +1,57 @@
+/* Tytuły sekcji */
+h1, h2, h3 {
+    color: var(--color-accent);
+    margin-bottom: 1rem;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+h3 {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+/* Paragrafy */
+p {
+    margin-bottom: 1rem;
+    color: var(--color-text-light);
+}
+
+/* Przyciski/Linki */
+.btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background-color: var(--color-accent);
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: opacity 0.3s ease;
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+
+/* Karty (dla portfolio) */
+.card {
+    background-color: var(--color-surface);
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Obrazy */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
