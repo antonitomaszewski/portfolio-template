@@ -20,6 +20,8 @@ async function init() {
         const data = await response.json();
         
         // Renderuj stronę
+        renderFirstImage(data.backgrounds);
+        renderSiteTitle(data.title, data.subtitle);
         renderNavigation(data.navigation);
         renderSections(data.sections, data.backgrounds);
         
@@ -35,6 +37,16 @@ async function init() {
             </div>
         `;
     }
+}
+
+
+function renderFirstImage(backgrounds) {
+    const hero = document.getElementById('hero');
+    hero.style.backgroundImage = `url('${THEME_PATH}/images/${backgrounds[0]}')`;
+}
+function renderSiteTitle(title, subtitle) {
+    document.getElementById('main-title').textContent = title;
+    document.getElementById('subtitle').textContent = subtitle;
 }
 
 // Renderuj nawigację
