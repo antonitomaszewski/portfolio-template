@@ -42,7 +42,7 @@ async function init() {
 
 function renderFirstImage(backgrounds) {
     const hero = document.getElementById('hero');
-    hero.style.backgroundImage = `url('${THEME_PATH}/images/${backgrounds[0]}')`;
+    hero.style.backgroundImage = `url('${THEME_PATH}/images/${backgrounds[2]}')`;
 }
 function renderSiteTitle(title, subtitle) {
     document.getElementById('main-title').textContent = title;
